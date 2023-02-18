@@ -1,0 +1,43 @@
+/* VARIABLES */
+:root {
+    --blue: #;
+    --orange: #;
+    --gradient: linear-gradient(top, #e8198b 0%, #c7eafd 100%);
+
+}
+
+/* RESETS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* GLOBAL CLASSES */
+
+#search-input,
+#search-button {
+    width: 100%;
+}
+
+/* CUSTOM STYLES */
+header {
+    background: linear-gradient(90deg, rgba(211,171,238,1) 0%, rgba(254,118,118,1) 50%, rgba(249,164,45,1) 100%);
+    padding: 25px 0;
+    margin-bottom: 20px;
+}
+
+aside {
+    margin:20px;
+}
+
+#search-button {
+    border-radius: 10;
+}

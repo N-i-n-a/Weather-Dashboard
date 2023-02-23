@@ -23,10 +23,12 @@ function saveToLocalStorage(searchItem) {
 
 function retrieveFromLocalStorage() {
     var lastSearchedItem = localStorage.getItem('city');
-    searchHistory.insertAdjacentHTML('beforeend', `
+    if (lastSearchedItem != null) {
+        searchHistory.insertAdjacentHTML('beforeend', `
             <div id="searchHistoryItem">
                 <p>${lastSearchedItem}</p>
             </div>`)
+    }
 }
 
 function displayWeather() {
